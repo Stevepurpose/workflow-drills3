@@ -6,11 +6,11 @@ jobs:
     build:
         runs-on: ubuntu-latest
         outputs:
-           result: ${{steps.get-result.outputs.result}}
+           result: ${{steps.get-result.outputs.val}}
         steps:          
           - name: first step
             id : get-result
-            run: echo "result=42" >> $GITHUB_OUTPUT
+            run: echo "val=42" >> $GITHUB_OUTPUT
 
 
 
